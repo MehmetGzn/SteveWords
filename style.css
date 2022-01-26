@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+body{
+    background-color: black;
+    min-width: 350px;
+}
+
+.header{
+    padding-top: .3%;
+    width: 100%;
+}
+
+.nav{
+    margin: 1.2%;
+    padding: 1%;
+    border-radius: 1rem;
+    background-color: #ffffff19;
+    max-height: 8rem;
+    animation: nav-load 1s ease-in;
+    animation-duration: 1s;
+}
+
+.appleLogo{
+    margin: auto;
+    width: 5%;
+    min-width: 50PX;
+}
+
+.appleLogo img{
+    position: relative;
+    width: 100%;
+    max-width: 70px;
+}
+
+.section1{
+    margin: 1.2%;
+    padding: 2%;
+    border-radius: 1rem;
+    background-color: #ffffff19;
+    animation: div-load 1s ease-in;
+    animation-duration: 2s;
+    transition: all 1s;
+}
+
+.section2{
+    margin-bottom: 2%;
+}
+
+.steveJobsImg{
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 40%;
+    max-width: 400px;
+}
+
+.paragraph{
+    text-indent: 5%;
+    width: 50%;
+    font-size: 1.9rem;
+    padding: 3%;
+    margin-top: 4%;
+    margin-right: 5%;
+    float: right;
+}
+
+.words{
+    margin-top: 1.2%;
+    margin-left: 1.2%;
+    padding: 2%;
+    border-radius: 1rem;
+    background-color: #ffffff19;
+    animation: words-load 2s ease-in;
+    animation-duration: 3s;
+}
+
+.p1{
+    margin-top: 1%;
+    color: #b3b3b3;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.p2{
+    margin-top: .4%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #191919;
+    transition: all 1s;
+}
+
+div{
+    transition: all 1s;
+}
+
+div:hover > .p2{
+    color: rgb(218, 142, 1);
+}
+
+.words:hover{
+    background-color: #ffffff25;
+}
+
+@keyframes nav-load {
+    0% {opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@keyframes div-load {
+    0% {opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@keyframes words-load {
+    0% {opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@media (max-width: 1050px) {
+    .paragraph{
+        font-size: 1.5rem;
+    }
+    .words p{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .paragraph{
+        font-size: 1.2rem;
+    }
+    .words p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .paragraph{
+        font-size: .9rem;
+    }
+    .words p{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 450px){
+    .paragraph{
+        font-size: .5rem;
+    }
+    .words p{
+        font-size: .4rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .appleLogo{
+        min-width: 25px;
+    }
+    .nav{
+        border-radius: 0.5rem;
+    }
+    .section1{
+        border-radius: 0.4rem;
+    }
+    .paragraph{
+        font-size: .7rem;
+    }
+    
+}
